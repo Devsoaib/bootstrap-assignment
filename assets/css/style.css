@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,600&display=swap");
+/* basic reset */
+:root {
+  --color-body: #000000;
+  --color-heading: #ffffff;
+  --color-base: #033f47;
+  --color-base2: #022a30;
+  --color-brand: #ff7a57;
+  --color-brand2: #deff58;
+  --sidbar-width: 240px;
+  --font-base: "poppins";
+}
+
+body {
+  color: var(--color-body);
+  font-family: Poppins, raleway, monospace;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  font-family: var(--font-base);
+}
+a:hover {
+  color: var(--color-brand);
+}
+.card img {
+  width: 100%;
+}
+/* menu css */
+
+.my-primary-menu li {
+  margin-right: 25px;
+  font-size: 16px;
+}
+.social {
+  margin: 0 20px;
+}
+.social span i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+.social span i:hover {
+  color: var(--color-brand);
+}
+.all-btns {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  border-radius: 50px;
+  font-family: var(--font-base);
+}
+.all-btns:hover {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+.all-btns span i {
+  color: #000000;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.btn-header {
+  color: white;
+}
+.btn-header:hover {
+  color: white;
+}
+.btn-header:hover span i {
+  transform: rotate(360deg);
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* carousel */
+.carousel-contents {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+.arrow-btn {
+  color: white !important;
+}
+.left-sections {
+  background-color: #4e4e4e;
+}
+.right-sections {
+  background-color: var(--color-brand);
+}
+
+/* services */
+
+.services-small {
+  color: var(--color-base2);
+  position: relative;
+}
+.services-small::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 46%;
+  height: 1px;
+  width: 8%;
+  background-color: var(--color-brand);
+}
+
+.contact-icon i {
+  color: var(--color-brand);
+  font-size: 40px;
+}
